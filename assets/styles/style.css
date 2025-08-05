@@ -1,0 +1,630 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h2, h3, form, ul {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-size: large;
+}
+
+legend {
+    line-height: 1.2;
+}
+
+header {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.seccion {
+    padding-block: 10rem;
+}
+
+.boton-seccion {
+    display: flex;
+    justify-content: center;
+}
+
+.desactivado {
+    color: darkgrey;
+}
+
+.activado {
+    color: #1E1E1E;
+}
+
+.logo-header {
+    max-width: 200px;
+}
+
+.boton-red a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.boton-red:hover {
+    background-color: #910d30;
+    transition: all ease 0.2s;
+}
+
+.boton-light a {
+    text-decoration: none;
+    color: #F50B49;
+    font-weight: 600;
+}
+
+.boton-light {
+    background-color: white;
+    border: none;
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.boton-light:hover {
+    background-color: gainsboro;
+    transition: all 0.2s ease-in-out;
+}
+
+.buscar-boton, .main-boton {
+    background-color: #F50B49;
+    border-radius: 30px;
+    border: none;
+    width: fit-content;
+}
+
+.buscar-boton, .boton-light {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+
+.main-boton {
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+}
+
+section, header, .foot {
+    padding-inline: 10rem;
+}
+
+.redes-sociales-imgs {
+    padding-inline: 2rem;
+}
+
+.hero {
+    background-image: url(../images/back-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.flex-container, .flex-container-newsletter {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+}
+
+.flex-container-newsletter {
+    justify-content: space-between;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+    width: 50%;
+}
+
+.text-section-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-hero {
+    width: 80%;
+}
+
+.p-blog {
+    width: 60%;
+}
+
+h1, .subtitle, .subtitle-white {
+    font-family: "Sulphur Point", sans-serif;
+    line-height: 1 !important;
+}
+
+.chile-h1 {
+    font-size: 150px;
+}
+
+.subtitle {
+    color: #F50B49;
+}
+
+.subtitle-white {
+    color: white;
+}
+
+.zonas-de-chile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 50%;
+}
+
+.zona-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    width: 100%;
+    color: white;
+    height: 120px;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.zona-block:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
+
+.zona-norte {
+    background-image: url(../images/zona-norte.png);
+}
+
+.zona-centro {
+    background-image: url(../images/zona-centro.png);
+}
+
+.zona-rapa-nui {
+    background-image: url(../images/rapa-nui.png);
+}
+
+.zona-sur {
+    background-image: url(../images/zona-sur.png);
+}
+
+.zona-austral {
+    background-image: url(../images/zona-austral.png);
+}
+
+.arrow-mas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F50B49;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.arrow-up-right {
+    transform: rotate(-45deg);
+}
+
+.light-blue {
+    background-color: #F6F8FA;
+}
+
+.info-importante, .destinos-recomendados, .blog, .redes-sociales-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.iconos-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+}
+
+.iconos-info a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.info-item img {
+    width: 170px;
+}
+
+.info-item:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.galeria-destinos, .galeria-blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.destino-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    padding: 1.5rem;
+    height: 400px;
+}
+
+.boton-descubrir {
+    display: flex;
+    justify-content: end;
+}
+
+.torres-del-paine {
+    background-image: url(../images/torres-del-paine.png);
+    grid-column: span 2;
+}
+
+.vina-del-mar {
+    background-image: url(../images/vina-del-mar.png);
+}
+
+.pucon {
+    background-image: url(../images/pucon.png);
+}
+
+.carretera-austral {
+    background-image: url(../images/carretera-austral.png);
+}
+
+.valle-del-elqui {
+    background-image: url(../images/valle-del-elqui.png);
+}
+
+.atacama {
+    background-image: url(../images/atacama.png);
+    grid-column: span 2;
+}
+
+.img-blog {
+    border-radius: 30px;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: white;
+    border-radius: 40px;
+    padding: 1rem;
+    box-shadow: 0em 0.5em 1em rgb(30 30 30 / 10%);
+}
+
+.blog-item-title {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.blog-item:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.blog-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F50B49;
+}
+
+.fecha {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+}
+
+.newsletter {
+    color: white;
+    background-image: url(../images/back-newsletter.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.formulario-mail {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+}
+
+.formulario {
+    background-color: white;
+    color: #1E1E1E;
+    padding: 2rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+}
+
+.galeria-rrss {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.8rem;
+}
+
+.rrss-item {
+    width: 100%;
+    height: 100%;
+}
+
+.rrss-item:hover {
+    filter: saturate(0%);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.rrss-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+footer {
+    background-color: #1E1E1E;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.about {
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0;
+}
+
+.footer-col li > a {
+    color: rgb(152, 152, 152);
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-media img {
+    max-width: 40px;
+}
+
+.news-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot {
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foot-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: rgb(152, 152, 152);
+}
+
+.foot-items a {
+    color: rgb(152, 152, 152);
+}
+
+@media (max-width: 1400px) {
+    section, header {
+        padding-inline: 5rem;
+    }
+
+    .info-item img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .imagen-hero {
+        width: 70%;
+        transform: translateX(120px);
+    }
+
+    .hero-grid {
+        transform: scale(1.3);
+    }
+
+    .p-hero {
+        width: 100%;
+    }
+
+    .p-blog {
+        width: 100%;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    .iconos-info {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1.5rem;
+    }
+
+    .galeria-destinos, .galeria-blog, .galeria-rrss {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .item9 {
+        grid-row: span 2;
+    }
+
+    .torres-del-paine, .atacama {
+        grid-column: span 1;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col {
+        align-items: start;
+    }
+
+    .logo-footer {
+        max-width: 280px;
+    }
+
+    .foot {
+        padding-inline: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .imagen-hero {
+        display: none;
+    }
+    
+    section, header, footer {
+        padding-inline: 2rem;
+    }
+
+    .foot {
+        padding-inline: 1rem;
+    }
+
+    .seccion {
+        padding-block: 6rem;
+    }
+
+    .h2-text {
+        text-align: center;
+    }
+
+    .p-hero {
+        text-align: center;
+    }
+
+    .flex-container, .flex-container-newsletter {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-section {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .zonas-de-chile, .formulario-mail, .formulario {
+        width: 100%;
+    }
+
+    .iconos-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-item img {
+        max-width: 100px;
+    }
+
+    .galeria-destinos, .galeria-blog, .galeria-rrss {
+        grid-template-columns: 1fr;
+    }
+
+    .wide {
+        grid-column: span 1;
+    }
+
+    .destino-item {
+        height: 300px;
+    }
+
+    .torres-del-paine, .atacama {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 350px) {
+    .iconos-info {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-footer {
+        max-width: 200px;
+    }
+}
